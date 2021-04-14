@@ -2,14 +2,13 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
-
-Some information about you!
+Hello there, I am Samiul Islam Rohan. I am a computer science student and a competitive programmer. I have completed my BSc in Computer Science and Engineering (CSE) from American International University-Bangladesh. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[rohansamiulislam@gmail.com](mailto:rohansamiulislam@gmail.com)
