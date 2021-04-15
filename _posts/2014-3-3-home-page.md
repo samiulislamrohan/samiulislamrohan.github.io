@@ -1,6 +1,5 @@
 ---
 layout: post
-title: 'Learn Data Structures, Algorithms, OOP, Database'
+title: ''
 published: true
 ---
-
