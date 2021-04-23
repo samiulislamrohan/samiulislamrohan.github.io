@@ -12,30 +12,32 @@ published: true
 ইনসার্শন সর্ট উদাহরণ দিয়ে বুঝানো যাক:-
 arr[10] ={4,5,2,7,30,9,8,12,6,56};
 arr[10]- এ ১০ টি ডাটা রয়েছে যেগুলো আনসর্টেড। ইনসার্শন সর্টিং করতে হলে কোডটি হবে এরকম:-
-#include <iostream> <br>
-using namespace std; <br>
-int main() <br>
-{ <br>
-    int arr[10] ={4,5,2,7,30,9,8,12,6,56}; <br>
+<pre>
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+    int arr[10] ={4,5,2,7,30,9,8,12,6,56}; 
+    for (int j=0; j<10; j++) 
+    { 
+        int value=arr[j]; 
+        int temp; 
+        int k=j-1; 
+        while (arr[k]>value &&k>=0) 
+        { 
+            int temp=arr[k+1]; 
+            arr[k+1]=arr[k]; 
+            arr[k]=temp; 
+             k--; 
+        } 
+    } 
     for (int j=0; j<10; j++) <br>
-    { <br>
-        int value=arr[j]; <br>
-        int temp; <br>
-        int k=j-1; <br>
-        while (arr[k]>value &&k>=0) <br>
-        { <br>
-            int temp=arr[k+1]; <br>
-            arr[k+1]=arr[k]; <br>
-            arr[k]=temp; <br>
-             k--; <br>
-        } <br>
-    } <br>
-    for (int j=0; j<10; j++) <br>
-    { <br>
+    { 
         cout<<arr[j]<<" "; <br>
-    } <br>
-    return 0; <br>
-} <br>
+    } 
+    return 0; 
+} 
+</pre>
 for (int j=1; j<10; j++) <br>
 এই লাইন দিয়ে একটি লুপ ইটারেট করা হয়েছে যেটি 1 থেকে আরম্ভ হবে এবং সাইজের আগ পর্যন্ত চলবে। 
 while (arr[k]>value&&k>=0) <br>
